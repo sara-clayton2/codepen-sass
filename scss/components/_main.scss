@@ -61,11 +61,21 @@
 		display: none;
 		text-align: left;
 		padding: 0;
+		margin: 0;
+		
 	}
 	li { 
 		padding-bottom: .5em;
 		padding-top: .5em;
 		border:3px solid $dark-grey; 
+		width: 100%;
+		font-family: $Montserrat;
+		letter-spacing:.25em;
+		margin-left: -3px;
+		&:hover { 
+			color: white;
+			background-color: $dark-grey;
+		}
 	}
 
 
