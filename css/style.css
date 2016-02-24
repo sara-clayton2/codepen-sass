@@ -453,58 +453,60 @@
   align-self: center;
 }
 
-button,
-button::before,
-button::after {
-  border: 5px solid #0cf;
-  padding: 0.5em 1em;
-}
-
-button {
-  box-sizing: border-box;
+.button {
   position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1.5em;
-  letter-spacing: 0.1em;
+  font-family: sans-serif;
+  max-width: 290px;
+  height: 60px;
+  background-color: #dedede;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button a {
+  position: relative;
+  padding: 0px;
+  text-align: center;
   text-transform: uppercase;
-  color: transparent;
-  background-color: transparent;
-  -webkit-appearance: none;
-  appearance: none;
+  text-decoration: none;
+  color: #888888;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 60px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  /* background-color:rgba(0, 0, 0, 0.2); */
 }
 
-button::before,
-button::after {
-  content: attr(data-text);
+.button:hover a {
+  color: #ffffff;
+  z-index: 1000;
+}
+
+.easing {
   position: absolute;
-  right: -5px;
-  left: -5px;
-  transition: top 300ms;
+  width: 100%;
+  top: 0;
+  /*Change 'top' to 'bottom' for an upwards transition*/
+  height: 0px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #39afc9;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  -ms-transition: .2s ease;
+  transition: .2s ease;
 }
 
-button::before {
-  top: 100%;
-  color: #fff;
-  background-color: #0cf;
+.button:hover {
+  color: #ffffff;
 }
 
-button:hover::before,
-button:focus::before {
-  top: -5px;
-}
-
-button:active::before {
-  color: gold;
-}
-
-button::after {
-  top: -5px;
-  color: #0cf;
-}
-
-button:hover::after,
-button:focus::after {
-  top: -100%;
+.button:hover .easing {
+  height: 60px;
 }
