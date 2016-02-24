@@ -455,6 +455,7 @@
 }
 
 .button {
+  top: 3em;
   font-family: "Montserrat", sans-serif;
   letter-spacing: .25em;
   position: relative;
@@ -476,6 +477,11 @@
 
 .button:hover .easing {
   height: 100%;
+}
+
+.button:hover ul {
+  display: block;
+  color: #58595B;
 }
 
 .button a {
@@ -503,7 +509,7 @@
 .easing {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  top: 0;
   height: 0px;
   margin: 0 auto;
   padding: 0px;
@@ -513,4 +519,18 @@
   -o-transition: .2s ease-in;
   -ms-transition: .2s ease-in;
   transition: .2s ease-in;
+}
+
+.list-items ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: none;
+  text-align: left;
+  padding: 0;
+}
+
+.list-items li {
+  padding-bottom: .5em;
+  padding-top: .5em;
+  border: 3px solid #58595B;
 }

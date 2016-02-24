@@ -1,4 +1,7 @@
+
+
 .button {
+	top: 3em;
     font-family: $Montserrat;
 	letter-spacing:.25em;
     position:relative;
@@ -14,6 +17,11 @@
 				height:100%;
 			}
 		}
+			&:hover ul { 
+				display: block;
+				color: $dark-grey;
+		}
+	
 	a {
 		position:relative;
 		padding:0px;
@@ -26,8 +34,9 @@
 		line-height:46px;
 		@include transition;
 	}
+	
 }
-
+	
 .button:hover a {
 
     color:$white;
@@ -37,7 +46,7 @@
 .easing {
     position: absolute;
     width:100%;
-    bottom:0;
+    top:0;
     height:0px;
     margin:0 auto;
     padding:0px;
@@ -45,4 +54,20 @@
     @include transitiontwo;
 }
 
+.list-items { 
+	 ul { 
+		text-decoration: none;
+		list-style-type: none;
+		display: none;
+		text-align: left;
+		padding: 0;
+	}
+	li { 
+		padding-bottom: .5em;
+		padding-top: .5em;
+		border:3px solid $dark-grey; 
+	}
+
+
+} 
 
