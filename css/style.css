@@ -463,7 +463,17 @@
   text-align: center;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.button:hover {
+  color: #ffffff;
+}
+
+.button:hover .easing {
+  height: 60px;
 }
 
 .button a {
@@ -478,8 +488,9 @@
   line-height: 60px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
   transition: all 0.3s;
-  /* background-color:rgba(0, 0, 0, 0.2); */
 }
 
 .button:hover a {
@@ -491,7 +502,6 @@
   position: absolute;
   width: 100%;
   top: 0;
-  /*Change 'top' to 'bottom' for an upwards transition*/
   height: 0px;
   margin: 0 auto;
   padding: 0px;
@@ -501,12 +511,4 @@
   -o-transition: .2s ease;
   -ms-transition: .2s ease;
   transition: .2s ease;
-}
-
-.button:hover {
-  color: #ffffff;
-}
-
-.button:hover .easing {
-  height: 60px;
 }

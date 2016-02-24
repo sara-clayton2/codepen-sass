@@ -1,4 +1,3 @@
-
 .button {
     
     position:relative;
@@ -8,27 +7,25 @@
     background-color: #dedede;
     margin:0 auto;
     text-align:center;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.button a {
-    
-    position:relative;
-    padding:0px;
-    text-align:center;
-    text-transform:uppercase;
-    text-decoration: none;
-    color:#888888;
-    font-size:0.8rem;
-    font-weight:600;
-    line-height:60px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    /* background-color:rgba(0, 0, 0, 0.2); */
- 
+	@include transition;
+		&:hover {
+			 color:#ffffff;	
+			.easing {
+				height:60px;
+			}
+		}
+	a {
+		position:relative;
+		padding:0px;
+		text-align:center;
+		text-transform:uppercase;
+		text-decoration: none;
+		color:#888888;
+		font-size:0.8rem;
+		font-weight:600;
+		line-height:60px;
+		@include transition;
+	}
 }
 
 .button:hover a {
@@ -40,26 +37,13 @@
 .easing {
     position: absolute;
     width:100%;
-    top:0; /*Change 'top' to 'bottom' for an upwards transition*/
+    top:0;
     height:0px;
     margin:0 auto;
     padding:0px;
     background-color: #39afc9;
-    -webkit-transition: .2s ease;
-    -moz-transition: .2s ease;
-    -o-transition: .2s ease;
-    -ms-transition: .2s ease;
-    transition: .2s ease;
+    @include transitiontwo;
 
 }
 
-.button:hover {
 
-        color:#ffffff;
-
-}
-
-.button:hover .easing {
-  
-    height:60px;
-}
