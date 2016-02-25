@@ -594,14 +594,6 @@ a {
   margin-right: 10px;
 }
 
-.logo {
-  font-size: 50px;
-  text-align: center;
-  color: #58595B;
-  padding: 0;
-  margin: 0;
-}
-
 @media only screen and (min-width: 35em) {
   .icons {
     text-align: right;
