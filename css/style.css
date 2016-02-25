@@ -454,7 +454,28 @@
   align-self: center;
 }
 
+body {
+  background-color: #FF994D;
+}
+
+a {
+  text-decoration: none;
+  color: #58595B;
+}
+
+.banner {
+  background-image: url(../images/bckgrnd.png);
+  background-size: cover;
+  height: 200px;
+  margin: -.5em;
+  padding: 0;
+  padding-top: 3em;
+  background-color: #fff;
+  overflow: hidden;
+}
+
 .button {
+  background-color: #fff;
   top: 0;
   font-family: "Montserrat", sans-serif;
   letter-spacing: .25em;
@@ -462,7 +483,7 @@
   max-width: 187px;
   height: 46px;
   border: 3px solid #58595B;
-  margin: 0 auto;
+  margin: 0 4em;
   text-align: center;
   -webkit-transition: .1s ease-in;
   -moz-transition: .1s ease-in;
@@ -484,7 +505,7 @@
   color: #58595B;
 }
 
-.button a {
+.button .but-header {
   position: relative;
   padding: 0px;
   text-align: center;
@@ -501,7 +522,7 @@
   transition: ease-out 0.1s;
 }
 
-.button:hover a {
+.button:hover .but-header {
   color: #fff;
   z-index: 1000;
 }
@@ -542,9 +563,43 @@
   letter-spacing: .25em;
   margin-left: -3px;
   font-size: 12px;
+  background-color: #fff;
 }
 
 .list-items li:hover {
-  color: white;
+  color: #fff;
   background-color: #58595B;
+}
+
+.icon-down {
+  color: #58595B;
+  float: right;
+  margin-left: 0;
+  margin-right: .5em;
+  margin-top: 1em;
+}
+
+.icons {
+  font-size: 30px;
+  color: #58595B;
+  text-align: right;
+  margin-top: 76px;
+}
+
+.icon-images:hover {
+  color: #FF994D;
+}
+
+.icon-mar {
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 35em) {
+  .icons {
+    text-align: right;
+    margin-top: 17px;
+  }
+  .icon-mar {
+    margin-right: 80px;
+  }
 }
