@@ -558,10 +558,10 @@ a {
   padding-top: .5em;
   border: 3px solid #58595B;
   border-bottom: none;
-  width: 93%;
+  width: 93.5%;
   font-family: "Montserrat", sans-serif;
   letter-spacing: .25em;
-  margin-left: -3px;
+  margin-left: 1px;
   font-size: 12px;
   background-color: #fff;
 }
