@@ -549,21 +549,19 @@ a {
   text-align: left;
   padding: 0;
   margin-top: 2px;
-  margin-left: -3px;
-  margin-right: 3px;
-  border-bottom: 3px solid #58595B;
+  margin-left: -2px;
+  margin-right: 2px;
+  border: 3px solid #58595B;
 }
 
 .list-items li {
   padding-left: 1em;
   padding-bottom: .5em;
   padding-top: .5em;
-  border: 3px solid #58595B;
-  border-bottom: none;
+  border-bottom: 3px solid #58595B;
   width: 93.5%;
   font-family: "Montserrat", sans-serif;
   letter-spacing: .25em;
-  margin-top: 1px;
   font-size: 12px;
   background-color: #fff;
 }
